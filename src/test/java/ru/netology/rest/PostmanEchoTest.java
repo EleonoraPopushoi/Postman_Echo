@@ -13,7 +13,7 @@ public class PostmanEchoTest {
                 .baseUri("https://postman-echo.com")
                 .body("some data")
                 .when()
-                .post("/post")
+                .post("/get")
                 .then()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("postman.schema.json"))
